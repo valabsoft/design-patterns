@@ -1,4 +1,5 @@
 #include "StrategyTXT.h"
+
 StrategyTXT::StrategyTXT()
 {
 	std::cout << "StrategyTXT constructor" << std::endl;

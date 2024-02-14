@@ -5,11 +5,12 @@
 
 int main()
 {
+    // Создание объекта контекста
     std::unique_ptr<Context> context = std::make_unique<Context>();
-    // Стратегия А
+    // Назначение стратегии A (TXT)
     context->setStrategy(std::make_unique<StrategyTXT>());
     context->exportData();
-    // Стратегия В
+    // Назначение стратегии B (TXT)
     context->setStrategy(std::make_unique<StrategyCSV>());
     context->exportData();
 }
