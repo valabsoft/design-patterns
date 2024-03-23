@@ -26,6 +26,10 @@ std::string Settings::getIP()
 {
 	return _IP;
 }
+void Settings::setIP(std::string ip)
+{
+	_IP = ip;
+}
 int Settings::getPortNumber()
 {
 	return _portNumber;

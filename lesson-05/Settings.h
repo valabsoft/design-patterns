@@ -8,6 +8,7 @@ public:
 	int getUpdateRate();
 	std::string getIP();
 	int getPortNumber();
+	void setIP(std::string ip);
 protected:
 	Settings();
 private:
