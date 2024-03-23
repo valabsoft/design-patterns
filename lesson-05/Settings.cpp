@@ -1,11 +1,11 @@
 #include "Settings.h"
 
-Settings* Settings::_pInstance = nullptr;
+std::shared_ptr<Settings> Settings::_pInstance = nullptr;
 
-Settings* Settings::Instance()
+std::shared_ptr<Settings> &Settings::Instance()
 {
 	if (_pInstance == nullptr)
-		_pInstance = new Settings();
+		_pInstance = std::shared_ptr<Settings>(new Settings());
 
 	return _pInstance;
 }
